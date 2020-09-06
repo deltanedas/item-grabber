@@ -1,9 +1,9 @@
 {
-	"name": "thorium-grabber",
-	"displayName": "[#f9a3c7]Thorium [#00aaff]Grabber[]",
+	"name": "item-grabber",
+	"displayName": "[gray]Item [#00aaff]Grabber[]",
 	"author": "DeltaNedas",
-	"description": "Adds a button to quickly grab thorium to fuel a nuke or new reactor.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[]."
-	"version": "2.0.1",
+	"description": "Adds a button to quickly take 15 of an item from the core.\nRight click (PC) or long press (mobile) to set the grabbed item.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[]."
+	"version": "1.0.0",
 	"dependencies": ["ui-lib"],
 	"hidden": true
 }
