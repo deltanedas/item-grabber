@@ -3,7 +3,8 @@
 	"displayName": "[gray]Item [#00aaff]Grabber[]",
 	"author": "DeltaNedas",
 	"description": "Adds a button to quickly take 15 of an item from the core.\nRight click (PC) or long press (mobile) to set the grabbed item.\n[stat]Requires [#00aaff]DeltaNedas/ui-lib[]."
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"dependencies": ["ui-lib"],
-	"hidden": true
+	"hidden": true,
+	"minGameVersion": 105
 }
