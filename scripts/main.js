@@ -68,6 +68,6 @@ ui.addButton("item-grabber", item, null, cell => {
 		}));
 	} else {
 		button.clicked(grab);
-		button.clicked(Input.KeyCode.mouseRight, set);
+		button.clicked(KeyCode.mouseRight, set);
 	}
 });
