@@ -17,6 +17,8 @@
 
 const ui = require("ui-lib/library");
 
+const KeyCode = Packages.arc.input.KeyCode;
+
 var button, container;
 var item = Items.thorium
 
