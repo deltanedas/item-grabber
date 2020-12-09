@@ -34,6 +34,7 @@ const set = () => {
 			button.style.imageUp.region = i.icon(Cicon.full);
 		});
 		container.pack();
+		// TODO: keep this on-screen
 		container.setPosition(button.x + button.width / 2 - container.width / 2,
 			button.y - container.height);
 
