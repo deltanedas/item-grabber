@@ -29,9 +29,9 @@ const set = () => {
 
 		container.clear();
 		ItemSelection.buildTable(container, Vars.content.items(), () => item, i => {
-			item = i;
+			if (i) {item = i}
 			container.visible = false;
-			button.style.imageUp.region = i.icon(Cicon.full);
+			button.style.imageUp.region = item.icon(Cicon.full);
 		});
 		container.pack();
 		// TODO: keep this on-screen
