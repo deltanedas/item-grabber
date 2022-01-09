@@ -20,7 +20,7 @@ const ui = require("ui-lib/library");
 const KeyCode = Packages.arc.input.KeyCode;
 
 var button, container;
-var item = Items.thorium
+var item = Items.silicon
 
 const set = () => {
 	container.visible = !container.visible;
@@ -49,7 +49,7 @@ const grab = () => {
 	container.visible = false;
 
 	const core = Vars.state.teams.cores(Vars.player.team()).first();
-	Call.requestItem(Vars.player, core, item, 15);
+	Call.requestItem(Vars.player, core, item, 2500);
 };
 
 ui.addButton("item-grabber", item, null, cell => {
