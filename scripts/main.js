@@ -20,7 +20,7 @@ const ui = require("ui-lib/library");
 const KeyCode = Packages.arc.input.KeyCode;
 
 var button, container;
-var item = Items.thorium
+var item = Items.silicon
 
 const set = () => {
 	container.visible = !container.visible;
@@ -29,9 +29,9 @@ const set = () => {
 
 		container.clear();
 		ItemSelection.buildTable(container, Vars.content.items(), () => item, i => {
-			item = i;
+			if (i) {item = i}
 			container.visible = false;
-			button.style.imageUp.region = i.icon(Cicon.full);
+			button.style.imageUp.region = item.icon(Cicon.full);
 		});
 		container.pack();
 		// TODO: keep this on-screen
@@ -49,7 +49,7 @@ const grab = () => {
 	container.visible = false;
 
 	const core = Vars.state.teams.cores(Vars.player.team()).first();
-	Call.requestItem(Vars.player, core, item, 15);
+	Call.requestItem(Vars.player, core, item, 2500);
 };
 
 ui.addButton("item-grabber", item, null, cell => {
