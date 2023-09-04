@@ -4,7 +4,7 @@
 	"author": "deltanedas",
 	"description": "Adds a button to quickly take 15 of an item from the core.\nRight click (PC) or long press (mobile) to set the grabbed item.\n[stat]Requires [#00aaff]deltanedas/ui-lib[]."
 	"version": "2.0.3",
-	"dependencies": ["ui-lib"],
+	"dependencies": ["ui_lib"],
 	"hidden": true,
 	"minGameVersion": 136,
 	"repo": "deltanedas/item-grabber"
